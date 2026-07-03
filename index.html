@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tacos El Vaquero de Arandas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <img src="img/logo.jpg" class="logo" alt="Logo">
+    <h1>Tacos El Vaquero de Arandas</h1>
+
+    <nav>
+      <button onclick="mostrar('menu')">Menú</button>
+      <button onclick="mostrar('sucursal')">Sucursal</button>
+    </nav>
+  </header>
+
+  <!-- MENU -->
+  <section id="menu" class="seccion activa">
+    <h2>🌮 Menú</h2>
+    <img src="img/menu.jpg" class="menu-img" alt="Menú">
+  </section>
+
+  <!-- SUCURSAL -->
+  <section id="sucursal" class="seccion">
+    <h2>📍 Sucursal</h2>
+
+    <p>
+      321 W 84th Ave, Thornton, CO 80260, Estados Unidos
+    </p>
+
+    <button class="btn-mapa" onclick="abrirMapa()">
+      🚗 Cómo llegar
+    </button>
+
+    <div class="redes">
+      <h3>Redes sociales</h3>
+
+      <a href="https://www.facebook.com/profile.php?id=100067043270958" target="_blank">
+        📘 Facebook
+      </a>
+
+      <a href="https://www.tiktok.com/@tacoselvaquerodearandas" target="_blank">
+        🎵 TikTok
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© Tacos El Vaquero de Arandas</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
